@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: "Mona Sans", sans-serif;
+            font-optical-sizing: auto;
+
+        }
+
+        .navbar_portfolio {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+
+        .navbar_portfolio .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item {
+            padding-right: 20px;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #9f9898;
+        }
+
+
+        .banner_sec {
+            background-color: #000;
+            padding-top: 140px;
+            padding-bottom: 80px;
+            color: #9f9898;
+        }
+
+        .banner_sec h3 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        .about_mee {
+            background-color: #212529;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            color: #9f9898;
+        }
+
+        .skills {
+            background-color: #000;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .skills ul {
+            padding-left: 0px;
+            display: flex;
+            list-style: none;
+
+        }
+
+        .skills ul li {
+            margin-right: 10px;
+            color: #fff;
+            border: 1px solid gray;
+            padding: 6px 35px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .experience {
+            background-color: #212529;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            color: #9f9898;
+        }
+
+        .experience .card {
+            background-color: #ffffff30;
+            padding: 15px;
+            border-radius: 10px 10px 10px 10px;
+            border: 0;
+
+        }
+
+        .project_description {
+            background-color: #000;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .project_description .card {
+            background-color: #ffffff30;
+            padding: 15px;
+            color: #fff;
+            height: 100%;
+            max-height: 500px;
+        }
+
+        .project_description .card:hover {
+            border: 1px solid #ffffffb8;
+        }
+
+        .project_description .card .card-text {
+            font-size: 13px;
+            color: #fff;
+        }
+
+        .work_togehter {
+            background-color: #212529;
+            padding-top: 40px;
+            padding-bottom: 30px;
+
+        }
+
+        .navbar-light .navbar-nav .nav-link:focus {
+            color: #fff;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #000;
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+
+        .nav-pills .nav-item .nav-link {
+            /* color: #fff; */
+            border: 1px solid gray;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        .navbar_portfolio .navbar-toggler {
+            color: rgba(0, 0, 0, .55);
+            border-color: rgba(0, 0, 0, .1);
+            background: #fff;
+            font-size: 10px;
+        }
+
+        @media screen and (min-device-width: 300px) and (max-device-width: 1200px) {
+
+            /* STYLES HERE */
+            .skills ul li {
+                padding: 6px 25px;
+            }
+
+            .skills ul {
+                padding-left: 0px;
+                display: block;
+                list-style: none;
+            }
+
+            .project_description .card {
+                background-color: #ffffff30;
+                padding: 15px;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--header start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow shadow-sm  navbar_portfolio">
+        <div class="container">
+            <h5 class="text-light mt-2">Personal</h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experince">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-light btn-sm" href="#contact">Contact</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!--header End-->
+    <!--banner start-->
+    <section class="banner_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-xs-12">
+                    <div class="content text-justify">
+                        <h3>Hi,I'm Vineeta tomar 👋</h3>
+                        <p>Driven and experienced web desgines with a passion for creating compelling and visually <br>
+                            apealing websites . Proven track record of solving code probelms and collabrating with <br>
+                            desgines teams to delievr top-notch web desgines.Proficient in
+                            Html,css,bootrap(3/4/5), <br> Responsive desgine and media query.Possess excellent
+                            communication
+                            and program management skills. </p>
+                        <address><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Faridabad,Amarnagar,sector-91
+                        </address>
+                        <!-- <h6>Available for new freelancing project </h6> -->
+                        <button class="btn btn-light btn-sm">Hire me</button>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1354842602/photo/portrait-of-a-young-businesswoman-working-on-a-laptop-in-an-office.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=kfP1g2712RiaxsDriIxFo363ARlaL2D591s-22CnIo8="
+                        alt="Desginer image" style="box-shadow: 10px 15px 0px 1px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--banner end-->
+    <!--about me section start-->
+    <section class="about_mee" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1354842602/photo/portrait-of-a-young-businesswoman-working-on-a-laptop-in-an-office.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=kfP1g2712RiaxsDriIxFo363ARlaL2D591s-22CnIo8="
+                        alt="Desginer image" style="box-shadow: 10px 15px 0px 1px;">
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1"></div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 col-xs-12 text-justify">
+                    <span class="badge bg-secondary fw-light">About me</span>
+                    <h4 class="text-light mt-3">Curious about me? Here you have it:</h4>
+                    <p>I'm a passionate, <a href="">self-proclaimed website desginer </a> who specializes in
+                        (Html5,css,tailwind,bootstrap framework,jquery).I am very enthusisastic about the bringing
+                        technical aspects of digital products to life. User experience,pixel perfect desgine and
+                        writing clear,readable,highly performant code matters to me.</p>
+                    <p>I began my journey as UI/UX Developer in 2020. I've continued to grow and evolve as a
+                        developer,taking on new challanges and learning the latest techologies along the way.</p>
+                    <p>I am very much a postive thinker and enjoy working on desgine end to end.</p>
+                    <h5>Finally some quick bits about me</h5>
+                    <ul>
+                        <li>Btech in computer science engineering</li>
+                        <li>Learner</li>
+                        <li>Freelancer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--about me section End-->
+    <!--skills start-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 text-center">
+                    <span class="badge bg-secondary fw-light">Skills</span>
+                    <p class="text-light mt-2">The skills, tools and techonologies I am really good at:</p>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/html.png" alt="HTML">
+                    <h6 class="text-light text-center mt-2">HTML</h6>
+
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/css.png" alt="CSS">
+                    <h6 class="text-light text-center mt-2">CSS</h6>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/js.png" alt="JS">
+                    <h6 class="text-light text-center mt-2">JS</h6>
+
+
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/bootstrap.png" alt="JS">
+                    <h6 class="text-light text-center mt-2">Bootstrap Framework</h6>
+
+
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/tailwind.png" alt="JS">
+                    <h6 class="text-light text-center mt-2">CSS</h6>
+
+
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3">
+                    <img class="img-fluid" src="./img/figma.png" alt="JS">
+                    <h6 class="text-light text-center mt-2">FIGMA</h6>
+
+
+                </div>
+            </div> -->
+
+
+            <div>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Bootstrap Framework</li>
+                    <li>Tailwind css</li>
+                    <li>Reactstrap</li>
+                    <li>Reactjs</li>
+                </ul>
+                <ul>
+
+
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>Gitlab</li>
+                    <li>Filezilla</li>
+                    <li>Winscp</li>
+                    <li>Visual studio</li>
+                    <li>Sublime</li>
+                    <li>notepad</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!--skills end-->
+    <!--experience start-->
+    <section class="experience" id="experince">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 text-center">
+                    <span class="badge bg-secondary fw-light">Experience</span>
+                    <p class="text-light mt-2">Here is quick summary of my most recent experience:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 mt-5 mb-5">
+                    <div class="card shadow shadow-sm">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4> Snva ventures pvt ltd</h4>
+                                <date>2022-2024</date>
+                                <br> <br>
+                            </div>
+                            <div class="col-lg-8">
+                                <h5><i>Website Desginer</i></h5>
+
+                                <ul>
+                                    <li>Modified and made changes to website based on requirement</li>
+                                    <li>condut error checks and de-bugged websites</li>
+                                    <li>Engaged in client interaction to discuss projects details</li>
+                                    <li>create demo page for client approval</li>
+                                    <li>Ensured website responsiveness for optimal user experience</li>
+                                    <li>Implemented responsive desgine strategies to enchance website functionality</li>
+                                    <li>work on email template and certificate desgine in HTML code</li>
+                                    <li>Transformed FIGMA desgineinto HTML (Bootstrap Framework, reactjs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div class="card shadow shadow-sm">
+                        <div class="row">
+
+                            <div class="col-lg-8">
+                                <h5><i>UI/UX Developer</i></h5>
+
+                                <ul>
+                                    <li>Convert PSD to HTML project</li>
+                                    <li>Convert PSD TO bootstrap Framework whatever client requirement</li>
+                                    <li>Checked for error and de-bugged websites</li>
+                                    <li>Create demo page for client approval</li>
+                                    <li>Ensured website responsiveness for optimal user experience</li>
+                                    <li>Interacted wit clients regarding the project </li>
+                                    <li>Collbrate with graphic desginer, backend developer and software tester</li>
+                                    <li>Desgined Personalized website for clients of all level:fresher,middle,senior
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4> Trancisco Group</h4>
+                                <date>2020-2022</date>
+                                <br> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--experience end-->
+    <!--project_description start-->
+    <section class="project_description" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 text-center">
+                    <span class="badge bg-secondary fw-light">Project</span>
+                    <!-- <p class="text-light mt-2">Here is quick summary of my most recent experience:</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-12">
+                    <ul class="nav nav-pills justify-content-center mt-4 mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Snva projects</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Trancisco projects</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content mt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="row ">
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/snva.png" alt="">
+                                            <h5 class="card-title mt-3">Snva technologies </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Snva techonologies serve Education &amp; Training,
+                                                Travel &amp;
+                                                Hospitality, Legal Solutions,
+                                                Media, Technology, IT-Modernization etc
+                                            </p>
+                                            <a href="https://www.snva.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/careerera.png" alt="">
+                                            <h5 class="card-title mt-3">Careerera </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Careerera is a global online learning platform that
+                                                provides digital skills training and certification programs
+                                            </p>
+                                            <a href="https://www.careerera.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/labelbar.png" alt="">
+                                            <h5 class="card-title mt-3">the Labelbar </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Labelbar is an online shopping platform for fashion and
+                                                lifestyle products in India
+                                            </p><br>
+                                            <a href="https://www.thelabelbar.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/airlingster.png" alt="">
+                                            <h5 class="card-title mt-3">Airlingster React project </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Discover the best Flight With Us.
+                                            </p><br>
+                                            <a href="https://www.airlingster.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/travomint.png" alt="">
+                                            <h5 class="card-title mt-3">Travomint </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Travomint is an online travel agency that offers flight
+                                                and travel services in the US, UK, and India
+                                            </p>
+                                            <a href="https://www.travomint.com/?source=google&amp;medium=cpc&amp;campaign=brand_india_sem&amp;adgroup=&amp;keyword=travomint&amp;matchtype=p&amp;gad_source=1&amp;gclid=Cj0KCQiAlsy5BhDeARIsABRc6ZsQJ6HWX7oElrZ7jWMEhoDjNEtOKAVqmo3ohtm7Y5v0nGFB9ZkJhAkaAtOuEALw_wcB"
+                                                class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/PHDversity.png" alt="">
+                                            <h5 class="card-title mt-3">PHDversity </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">A Globally Recognized
+                                                Doctorate of Philosophy (Ph.D) provides features 36 Months online
+                                                Program etc
+                                            </p>
+                                            <a href="https://www.phdversity.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/birchwood.png" alt="">
+                                            <h5 class="card-title mt-3">Birchwood university </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <p class="card-text">Birchwood University offers programs and career
+                                                services to help students prepare for their careers
+                                            </p>
+                                            <a href="https://www.birchwoodu.org/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row ">
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/exam.png" alt="">
+                                            <h5 class="card-title mt-3">Competitive exam </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <!-- <p class="card-text">Birchwood University offers programs and career
+                                                services to help students prepare for their careers
+                                            </p> -->
+                                            <a href="https://examsacademy.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/medical.png" alt="">
+                                            <h5 class="card-title mt-3">Medical Liners </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <!-- <p class="card-text">Birchwood University offers programs and career
+                                                services to help students prepare for their careers
+                                            </p> -->
+                                            <a href="https://medicallinkers.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 mb-3">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img class="img-fluid" src="./img/labs.png" alt="">
+                                            <h5 class="card-title mt-3">Transciscolabs </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted"></h6>
+                                            <!-- <p class="card-text">Birchwood University offers programs and career
+                                                services to help students prepare for their careers
+                                            </p> -->
+                                            <a href="https://tranciscolabs.com/" class="card-link">Go to website </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--project_description end-->
+    <!--work_togehter start-->
+    <section class="work_togehter" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-2 col-xl-2 col-lg-2"></div>
+                <div class="col-xxl-8 col-xl-8 col-lg-8 text-center">
+                    <span class="badge bg-secondary fw-light">Let's work together</span>
+                    <!-- <p class="text-light mt-2">Here is quick summary of my most recent experience:</p> -->
+                    <br><br>
+                    <p class="text-light mb-1"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp; <a
+                            href="tel:+8851993836">+8851993836</a></p>
+                    <p class="text-light mb-1"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                            href="mailto:vineetatomar77@gmail.com">vineetatomar77@gmail.com</a></p>
+                    <!-- <h5 class="text-light">Linkdin:</h5> -->
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+    <!--worktogether end-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+
+</html>
